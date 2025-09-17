@@ -1,0 +1,35 @@
+{
+  "name": "privacy-learning-dapp",
+  "version": "1.0.0",
+  "description": "Privacy-focused online learning platform with FHE technology",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site deployed on Vercel'",
+    "compile": "hardhat compile",
+    "compile:test": "node scripts/compile-test.js",
+    "verify:contract": "hardhat run scripts/verify-contract.js --network localhost",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:zama": "hardhat run scripts/deploy.js --network zama"
+  },
+  "keywords": [
+    "privacy",
+    "learning",
+    "blockchain",
+    "fhe",
+    "education",
+    "dapp",
+    "static",
+    "zero-dependencies"
+  ],
+  "author": "Privacy Learning Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "hardhat": "^2.24.3",
+    "hardhat-deploy": "^0.12.0"
+  },
+  "type": "module"
+}
